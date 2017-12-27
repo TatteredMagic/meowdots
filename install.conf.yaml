@@ -1,0 +1,45 @@
+
+- clean: ['~']
+
+- link:
+   ~/.dotfiles: ''
+   ~/.vim: vim/
+   ~/.vimrc: vimrc
+   ~/.scripts: scripts
+   ~/.zshrc: zshrc
+   ~/.gemrc: gemrc
+   ~/.fonts: fonts
+   ~/.aliases: aliases
+
+- brew:
+  - git
+  - vim
+  - pyenv
+  - rbenv
+  - zsh
+  - ansible
+  - asciiquarium
+  - pass
+  - wget
+  - colordiff
+  - curl
+  - cowsay
+  - fortune
+  - nmap
+  - ruby
+
+- cask:
+  - iterm2
+  - appcleaner
+  - keybase
+  - qtpass
+
+- shell:
+    - [fonts/install.sh, Installing airline fonts]
+    - [vim +PluginInstall +qall, Installing vim plugins]
+    - ["git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh", Installing oh-my-zsh]
+    - [git config --global core.editor $(which vim), Reconfiguring git to use any new vim installation]
+    - [git config --global user.name "Tabitha Smallwood", Setting git username]
+    - [git config --global user.email "tabitha.smallwood@displace", Setting git user email]
+    - [gem install lolcat]
+

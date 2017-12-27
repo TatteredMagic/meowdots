@@ -1,0 +1,59 @@
+https://www.macosxautomation.com/applescript/features/system-prefs.html
+
+tell application "System Events"
+	get the properties of the current user
+end tell
+
+{full name:"meow", picture path:"/Library/User Pictures/Instruments/Turntable.tif", name:"meowbook", class:user, home directory:"/Users/meowbook"}
+
+
+
+tell application "System Events"
+	get the properties of every login item
+end tell
+
+{name:"Keybase", path:"/Applications/Keybase.app", class:login item, kind:"Application", hidden:false}, {name:"Firefox", path:"/Applications/Firefox.app", class:login item, kind:"Application", hidden:false}, {name:"HipChat", path:"/Applications/HipChat.app", class:login item, kind:"Application", hidden:false}, {name:"net.sh", path:"/Users/meowbook/Desktop/net.sh", class:login item, kind:"Terminal scripts", hidden:false}
+
+
+
+tell application "System Events"
+	tell appearance preferences
+		get properties
+	end tell
+end tell
+
+{font smoothing style:automatic, font smoothing limit:0, recent servers limit:10, class:appearance preferences object, recent documents limit:10, recent applications limit:10, dark mode:true, font smoothing:true, highlight color:{53181, 53140, 54416}, smooth scrolling:true, scroll bar action:jump to next page, appearance:graphite}
+
+tell application "System Events"
+	tell appearance preferences
+		get properties
+    set properties to {font smoothing style:automatic, font smoothing limit:0, recent servers limit:10, class:appearance preferences object, recent documents limit:10, recent applications limit:10, dark mode:true, font smoothing:true, highlight color:{53181, 53140, 54416}, smooth scrolling:true, scroll bar action:jump to next page, appearance:graphite}
+	end tell
+end tell
+
+tell application "System Events"
+	tell current desktop
+		get properties
+	end tell
+end tell
+
+{display name:"HP LA2405x", change interval:1800.0, id:1.007421382E+9, random order:false, picture rotation:0, pictures folder:"/Users/meowbook/Desktop/two/MeowsHome/Pictures", picture:"/Users/meowbook/Desktop/two/MeowsHome/Pictures/430848-Kycb_2048x1152.jpg", translucent menu bar:missing value, class:desktop}
+
+
+tell application "System Events"
+	tell dock preferences
+		get properties
+	end tell
+end tell
+
+{minimize effect:genie, magnification size:1.0, dock size:0.223214283586, autohide:false, animate:true, magnification:false, screen edge:bottom, class:dock preferences object}
+
+
+
+tell application "System Events"
+	tell network preferences
+		get properties
+	end tell
+end tell
+
+{class:network preferences object, current location:location id "7CCD1F7A-0BE5-42D0-87B1-B4C610542AC3" of network preferences of application "System Events"}
