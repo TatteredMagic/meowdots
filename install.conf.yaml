@@ -27,6 +27,7 @@
   - fortune
   - nmap
   - ruby
+  - --HEAD pyenv-virtualenv
 
 - cask:
   - iterm2
@@ -42,4 +43,4 @@
     - [git config --global user.name "Tabitha Smallwood", Setting git username]
     - [git config --global user.email "tabitha.smallwood@displace", Setting git user email]
     - [gem install lolcat]
-
+    - [echo "ServerAliveInterval 500" >> /etc/ssh/ssh_config]
