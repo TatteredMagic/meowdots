@@ -27,6 +27,10 @@
   - fortune
   - nmap
   - ruby
+  - rename
+  - grep
+  - ffmpeg
+  - youtube-dl
   - --HEAD pyenv-virtualenv
 
 - cask:
