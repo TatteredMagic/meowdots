@@ -47,4 +47,5 @@
     - [git config --global user.name "Tabitha Smallwood", Setting git username]
     - [git config --global user.email "tabitha.smallwood@displace", Setting git user email]
     - [gem install lolcat]
+    - [gem install bundler]
     - [echo "ServerAliveInterval 500" >> /etc/ssh/ssh_config]
